@@ -4,7 +4,7 @@ file(GLOB Marsyas_PYTHON_MODULES
 
 install(
   FILES ${Marsyas_PYTHON_MODULES}
-  DESTINATION ${PYTHON_MODULES_DIR}
+  DESTINATION ${Python_SITEARCH}
   )
 
 

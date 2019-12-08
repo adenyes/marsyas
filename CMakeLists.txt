@@ -16,6 +16,23 @@ if (POLICY CMP0042)
   cmake_policy(SET CMP0042 NEW)
 endif()
 
+# Accept policy to remove effects on install name when setting rpath
+if (POLICY CMP0068)
+  cmake_policy(SET CMP0068 NEW)
+endif()
+
+# Accept policy to generate standard target names for SWIG targets
+if(POLICY CMP0078)
+  CMAKE_POLICY(SET CMP0078 NEW)
+endif()
+
+# Accept policy to pass SWIG_MODULE_NAME property to swig compiler
+if(POLICY CMP0086)
+  CMAKE_POLICY(SET CMP0086 NEW)
+endif()
+
+
+
 # Mac OS X: rpath handling
 set(CMAKE_MACOSX_RPATH TRUE)
 set(CMAKE_INSTALL_RPATH "@loader_path/../lib")
